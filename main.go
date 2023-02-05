@@ -1,6 +1,7 @@
 package main
 
 import (
+	"log"
 	"my-website/pkg/constants"
 	"my-website/pkg/routes/v1"
 
@@ -22,5 +23,5 @@ func main() {
 	app.Get("*", func(c *fiber.Ctx) error {
 		return c.Status(fiber.StatusNotFound).Redirect("/")
 	})
-	app.Listen(constants.PORT)
+	log.Fatalln(app.Listen(constants.PORT))
 }
