@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="css/homepage/style.css">
+    <title>Anirudh Giri</title>
+</head>
+
+<body>
+    <!-- <nav class='navbar navbar-dark navbar-expand-lg bg-dark'>
+        <div class='container-fluid'>
+            <button class='navbar-toggler' type='button' data-bs-toggle='collapse'
+                data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false'
+                aria-label='Toggle navigation'>
+                <span class='navbar-toggler-icon'></span>
+            </button>
+            <div class='collapse navbar-collapse' id='navbarSupportedContent'>
+                <ul class='navbar-nav me-auto mb-2 mb-lg-0'>
+                    <li class='nav-item'>
+                        <a class='nav-link active' aria-current='page' href='/'>Home</a>
+                    </li>
+                    <li class='nav-item'>
+                        <a class='nav-link ' href='/blog'>Blog</a>
+                    </li>
+                    <li class='nav-item dropdown'> 
+                        <a class='nav-link dropdown-toggle ' href='#' role='button' data-bs-toggle='dropdown'
+                            aria-expanded='false'>
+                            Projects
+                        </a>
+                        <ul class='dropdown-menu'>
+                            <li><a class='dropdown-item' href='#'>Action</a></li>
+                            <li><a class='dropdown-item' href='#'>Another action</a></li>
+                            <li>
+                                <hr class='dropdown-divider' />
+                            </li>
+                            <li><a class='dropdown-item' href='#'>Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> -->
+    <div class="container mt-4">
+        <div class="row align-items-end align-items-md-center justify-content-center">
+            <div class="col-4 col-md-2">
+                <img src="img/pfp.jpeg" class="rounded-circle img-fluid img-thumbnail shadow" id="home-pfp">
+            </div>
+            <div class="col-4">
+                <div class="row">
+                    <p class="display-6">Hello! I am <br><span class="h1"><b>Anirudh Giri</b></span></p>
+                </div>
+                <div class="row" id="social-buttons">
+                    <div class="col-2"><a href="https://github.com/anirudhgiri"
+                            class="lab la-github text-decoration-none" target="_blank"></a></div>
+                    <div class="col-2"><a href="https://www.linkedin.com/in/anirudhgiri/" class="lab la-linkedin"
+                            target="_blank"></a></div>
+                    <div class="col-2"><a href="mailto:anirudhgirimail@gmail.com" class="las la-envelope"
+                            target="_blank"></a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-7 mt-5">
+                <b class="h4">About Me 🙋‍♂️</b>
+                <p id="body-text">I'm a programmer and tech enthusiast from Chennai, India! I'm currently working as a
+                    Software Engineer at <a href="http://zohocorp.com">Zoho</a>. I love cryptography, programming with
+                    JS
+                    and Go, playing Chess, and distro-hopping!</p>
+                <br>
+                <b class="h4">Education 🎓</b>
+                <p id="body-text">I recieved my undergraduate degree in <b>Computer Science Engineering</b> with a
+                    specialization in Software Engineering from <b>SRM Institute of Science and Technology</b> with a
+                    GPA of
+                    9.0</p>
+                <br>
+                <b class="h4">Work Experience 👨‍💻</b>
+                <p id="body-text">
+                <ul>
+                    <li>
+                        <h5>Software Engineer (Member Technical Staff)</h5>
+                        <p>
+                            <b>Zoho Corp.</b> (Jul 2022 - Current) <br>
+                            In-charge of developing an agent for all major Linux distros to enable them to work with
+                            Zoho
+                            Directory, our <a
+                                href="https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol">LDAP</a>
+                            service
+                            on the cloud. Also working on building our own <a
+                                href="https://en.wikipedia.org/wiki/RADIUS">RADIUS</a> service on the cloud.
+                        </p>
+                    </li>
+                    <li>
+                        <h5>Microservices Developer (Intern)</h5>
+                        <p>
+                            <b>Bajaj Finserv Health Ltd.</b> (Internship, Jan 2022 - Jun 2022) <br>
+                            Built microservices with NodeJS and MongoDB to encrypt and store sensitive patient health
+                            records, to offer coupons and other customer rewards, and also helped build an in-house <a
+                                href="https://en.wikipedia.org/wiki/Content_management_system">CMS</a> platform.
+                        </p>
+                    </li>
+                </ul>
+                </p>
+                <b class="h4">Projects 💻</b>
+                <p id="body-text">
+                <ul>
+                    <li>
+                        <h5>TourneyChess</h5>
+                        <p>
+                            A free and open source tournament manager for chess tournaments! Makes conducting chess
+                            tournaments way easier by keeping track of the players, their scores, their next opponents,
+                            and
+                            a whole lot more. (Work in Progress) <br>
+                            <small><a href="https://github.com/anirudhgiri/tourney-chess">Github Link</a></small>
+
+                        </p>
+                    </li>
+                    <li>
+                        <h5>CoviPing</h5>
+                        <p>
+                            Created during the Indian COVID-19 Vaccination Drive to help users find vaccination
+                            appointments
+                            by sending them a notification email when vaccine slots were available for booking in their
+                            district using the CoWIN API. <br>
+                            <small><a href="https://github.com/anirudhgiri/CoviPing">Github Link</a> &bull; <a
+                                    href="/CoviPing">Project Link</a></small>
+                        </p>
+                    </li>
+                    <li>
+                        <h5>TinyNN4J</h5>
+                        <p>
+                            Lightweight Deep Neural Network Library for Java. Written mainly to get an understanding of
+                            all
+                            the mathematics (mainly linear algebra) behind Artificial Neural Networks. <br>
+                            <small><a href="https://github.com/anirudhgiri/TinyNN4J">Github Link</a></small>
+                        </p>
+                    </li>
+                </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+</html>

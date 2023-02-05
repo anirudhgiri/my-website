@@ -1,0 +1,28 @@
+.bg-nav{
+    background-color: rgba(2, 0, 139, 0.863);
+}
+
+footer{
+    color: white;
+}
+
+a{
+    text-decoration: underline;
+    color: inherit;
+}
+
+/* #info-div{
+    border: 3px solid;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    
+}
+
+#info-div{
+    background-color: #36e05e81;
+    border-color: #28a74669;
+}
+
+#info-text{
+    color: green;
+} */
