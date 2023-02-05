@@ -5,11 +5,17 @@ import (
 	"my-website/pkg/routes/v1"
 
 	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber/v2/middleware/compress"
 	"github.com/gofiber/fiber/v2/middleware/logger"
 )
 
 func main() {
 	app := fiber.New()
+
+	app.Use(compress.New(compress.Config{
+		Level: compress.LevelBestSpeed,
+	}))
+
 	app.Use(logger.New())
 	app.Static("/", "./static")
 	app.Route("/", routes.RootRouter)
