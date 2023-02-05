@@ -20,7 +20,7 @@ func main() {
 	app.Static("/", "./static")
 	app.Route("/", routes.RootRouter)
 	app.Get("*", func(c *fiber.Ctx) error {
-		return c.Status(fiber.StatusNotFound).SendString("Error 404: Page Not Found")
+		return c.Status(fiber.StatusNotFound).Redirect("/")
 	})
 	app.Listen(constants.PORT)
 }
