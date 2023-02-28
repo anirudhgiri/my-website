@@ -1,5 +1,12 @@
+html {
+    height: 100%;
+}
+
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .emoji {
@@ -29,6 +36,7 @@ a {
 }
 
 footer {
+    margin-top: auto;
     color: black;
     text-align: center;
 }

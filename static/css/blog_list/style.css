@@ -1,5 +1,12 @@
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .emoji {
@@ -10,8 +17,8 @@ body {
     font-size: larger;
 }
 
-.blogDate {
-    text-align: end;
+.blogDateDiv {
+    text-align: right;
 }
 
 .blogSubtitle {
@@ -24,8 +31,7 @@ a {
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
+    margin-top: auto;
     width: 100%;
     color: black;
     text-align: center;

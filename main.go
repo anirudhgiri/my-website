@@ -14,7 +14,7 @@ import (
 
 func main() {
 	engine := handlebars.New("./views", ".hbs")
-	engine.Reload(true)
+	// engine.Reload(true)
 	app := fiber.New(fiber.Config{
 		Views:       engine,
 		ViewsLayout: "layouts/main",

@@ -1,16 +1,28 @@
 <div class="container">
     <div class="row">
-        <div class="col-12 mt-4">
+        <div class="col-12 mt-2 text-center">
+            <h2>Blog</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 mt-2 text-center">
+            <p>My very own personal blog where I <strike>ramble</strike> express my understanding of
+                various tech related subjects.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-8 offset-md-2 mt-4">
             {{#each Blogs}}
-            <div class="row mb-4">
-                <div class="col-6">
-                    <a href="/blog/{{Slug}}" class="blogTitle">{{Title}}</a>
+            <div class="row mb-1">
+                <div class="col-8">
+                    <a href="/blog/{{Slug}}" class="blogTitle">{{Title}}</a><br>
+                    <span class="blogSubtitle">{{SubTitle}}</span>
                 </div>
-                <div class="offset-2 col-4">
-                    <span class="blogDate">{{Date}}</span>
+                <div class="col-4 text-end small">
+                    <span>{{Date}}</span>
                 </div>
-                <span class="blogSubtitle">{{SubTitle}}</span>
             </div>
+            <hr>
             {{/each}}
         </div>
     </div>

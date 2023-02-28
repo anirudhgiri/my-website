@@ -19,6 +19,6 @@ func BlogRouter(router fiber.Router) {
 		blog := db.GetBlogBySlug(slug)
 		mdParser := parser.NewWithExtensions(parser.HardLineBreak | parser.FencedCode | parser.Strikethrough | parser.Attributes)
 		contentHTML := markdown.ToHTML([]byte(blog.Content), mdParser, nil)
-		return c.Render("blog_content", fiber.Map{"blogContent": string(contentHTML), "Blog": true, "Viewname": "blog_content"})
+		return c.Render("blog_content", fiber.Map{"blogContent": string(contentHTML), "Blog": true, "Viewname": "blog_content"}, "layouts/blog_content")
 	})
 }
