@@ -1,1 +1,29 @@
-{{{blogContent}}}
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-12 col-md-10 offset-md-1">
+            <h1 class="m-0">{{blogTitle}}</h1>
+            <p class="text-secondary fs-6">{{blogSubTitle}}</p>
+            <hr>
+        </div>
+    </div>
+    <div class="row mb-5">
+        <div class="col-2 col-md-auto offset-md-1 pe-0">
+            <img src="/img/pfp.jpeg" alt="" class="rounded-circle" style="height: 48px;">
+        </div>
+        <div class="col-10 col-md-auto ps-0">
+            <div class="row m-0 fw-bold">
+                <div class="col-12 m-0">
+                    <a href="/" class="small">Anirudh Giri</a>
+                </div>
+                <div class="col-12 m-0">
+                    <span class="text-secondary small">{{blogCreatedAt}} &bull; {{blogReadTime}} Minute Read</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class=" col-12 col-md-10 offset-md-1">
+            {{{blogContent}}}
+        </div>
+    </div>
+</div>
